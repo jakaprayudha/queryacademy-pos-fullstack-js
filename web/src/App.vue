@@ -1,7 +1,7 @@
 <script setup>
-import FormExample from './pages/FormExample.vue';
+import AsyncExample from './pages/AsyncExample.vue'
 </script>
 
 <template>
-  <FormExample />
+  <AsyncExample />
 </template>
