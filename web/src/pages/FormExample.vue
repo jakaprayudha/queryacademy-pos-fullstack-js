@@ -11,16 +11,31 @@
             <input type="email" v-model="form.email" class="form-control">
          </div>
          <button class="btn btn-primary" type="submit">Kirim</button>
-         <button type="button" @click="resetForm">Reset</button>
+         <button type="button" class="btn btn-secondary" @click="resetForm">Reset</button>
       </form>
 
-      <div v-if="submitted" class="result"></div>
-      <h3>Data Terkirim</h3>
-      <p>Nama : {{ form.name }}</p>
-      <p>Email : {{ form.email }}</p>
+      <div v-if="submitted" class="result">
+         <h3>Data Terkirim</h3>
+         <p>Nama : {{ form.name }}</p>
+         <p>Email : {{ form.email }}</p>
+      </div>
    </div>
 </template>
 
 <script setup>
-
+import {ref} from 'vue'
+const form = ref({
+   name:'',
+   email:''
+})
+const submitted = ref(false)
+//Event Handler
+function handleSubmit(){
+   submitted.value = true
+}
+function resetForm(){
+   form.value.name = ''
+   form.value.email = ''
+   submitted.value = false
+}
 </script>
