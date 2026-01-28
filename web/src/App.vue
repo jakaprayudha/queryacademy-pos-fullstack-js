@@ -1,7 +1,7 @@
 <script setup>
-import DemoPage from './pages/DemoPage.vue'
+import FormExample from './pages/FormExample.vue';
 </script>
 
 <template>
-  <DemoPage />
+  <FormExample />
 </template>
