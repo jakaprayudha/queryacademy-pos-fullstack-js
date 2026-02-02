@@ -1,0 +1,11 @@
+# API env
+api/.env
+api/.env.example
+
+# API node
+api/node_modules/
+api/package.json
+api/package-lock.json
+
+# API source
+api/src/

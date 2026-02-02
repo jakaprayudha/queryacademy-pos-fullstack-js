@@ -34,3 +34,17 @@ coverage
 
 # Vitest
 __screenshots__/
+
+# ENV
+api/.env
+api/.env.example
+
+# Node dependencies
+api/node_modules/
+
+# Lock & package files
+api/package-lock.json
+api/package.json
+
+# Source folder
+api/src/
